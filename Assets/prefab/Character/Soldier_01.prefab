@@ -154,7 +154,7 @@ MonoBehaviour:
   listener: {fileID: -8708756523009372444}
   alertSign: {fileID: 8320635777804078568}
   attackRange: 1
-  reactTime: 2
+  reactTime: 1.5
   detectLayer:
     serializedVersion: 2
     m_Bits: 8

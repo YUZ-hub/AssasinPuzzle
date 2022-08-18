@@ -15,7 +15,7 @@ MonoBehaviour:
   sceneIndex: 4
   nextStage: {fileID: 11400000, guid: 8706ff95f3bafaa468a30b3a0b442d33, type: 2}
   record: 0
-  currentRecord: 0
+  currentRecord: 2
   stagePass: 0
   goldIsFound: 0
   stageIsOpen: 0

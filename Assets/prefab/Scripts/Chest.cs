@@ -7,6 +7,7 @@ public class Chest : MonoBehaviour, TriggerObject
 {
     [SerializeField]
     private GameEvent foundGold;
+    [SerializeField] private GlowingControll glow;
     private Animator animator;
 
     public bool isTrigger { get; set; }
@@ -25,6 +26,6 @@ public class Chest : MonoBehaviour, TriggerObject
         isTrigger = true;
         animator.SetTrigger("open");
         foundGold.Raise();
-
+        glow.SetGlow(false);
     }
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   sceneIndex: 6
   nextStage: {fileID: 0}
   record: 0
-  currentRecord: 0
+  currentRecord: 3
   stagePass: 0
   goldIsFound: 0
   stageIsOpen: 0

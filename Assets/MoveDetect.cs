@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class MoveDetect : MonoBehaviour
 {
-    [SerializeField] private GameEvent moveEvent;
+    [SerializeField] private GameObject moveTutorial, interactTutorial;
     void Update()
     {
         if( Input.GetAxisRaw("Horizontal") != 0)
         {
-            moveEvent.Raise();
+            moveTutorial.SetActive(false);
+            interactTutorial.SetActive(true);
+            Destroy(this);
         }
     }
 }

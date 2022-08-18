@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SneakDetected : MonoBehaviour
 {
-    [SerializeField] private GameEvent SneakEvent;
-    void Update()
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float offset;
+
+    private void Update()
     {
+        transform.position = playerTransform.position + new Vector3(0, offset, 0);
         if(Input.GetKeyDown(KeyCode.A))
         {
-            SneakEvent.Raise();
+            gameObject.SetActive(false);
+            Destroy(this);
         }
     }
 }
